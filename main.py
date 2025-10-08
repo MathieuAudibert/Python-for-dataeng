@@ -7,6 +7,7 @@ fruits.insert(1, 'kiwi')
 fruits.remove('banane')
 print(fruits)
 """
+
 """
 personnes = {'nom': "Dupont", 'prenom': "Jean", 'age': 30, 'ville': "Paris"}
 print(personnes['nom'])
