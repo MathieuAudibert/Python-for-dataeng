@@ -46,5 +46,13 @@ def scan_text(text):
                 frequent_letter[char] = 1
     letters = {k: v for k, v in sorted(frequent_letter.items(), key=lambda item: item[1], reverse=True)}
     print(word_count, "\n", frequent_words[:10], "\n", moyenne, "\n", letters)
-scan_text("je m'appelle mathieu et je suis ingénieur. Roméo est un ingenieur aussi qui travaille a imagino en tant que swe r&dje m'appelle mathieu et je suis ingénieurje m'appelle mathieu et je suis ingénieur")
+#scan_text("je m'appelle mathieu et je suis ingénieur. Roméo est un ingenieur aussi qui travaille a imagino en tant que swe r&dje m'appelle mathieu et je suis ingénieurje m'appelle mathieu et je suis ingénieur")
 
+def trouver_sous_ensemble(L, S):
+    ensemble = []
+    for i in range(len(L)):
+        for j in range(i, len(L)):
+            if L[i] + L[j] == S:
+                ensemble.append([L[i], L[j]])
+    print(ensemble)
+trouver_sous_ensemble([2, 3, 5, 7], 10)
