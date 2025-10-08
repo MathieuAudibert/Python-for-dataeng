@@ -27,8 +27,13 @@ def moyenne_gen(liste_student):
     print(liste_student)
     student_moy =  {}
     for i in liste_student:
-        student_moy[i.get("nom")] = i.get("notes")
-        print(student_moy)
+        notes = i.get("notes")
+        if isinstance(notes, list):
+            for x in notes[:]:
+                notes[notes.index(x)] = int(x)
+
+        student_moy[i.get("nom")] = sum(notes) / len(i.get("notes"))
+    print(student_moy)
 
 def main():
     liste_student = []
