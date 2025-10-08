@@ -75,5 +75,7 @@ def regrouper_par_cle(liste, cle):
             ensemble[key] = [value]
     print(ensemble)
 
-regrouper_par_cle([{"ville": "Paris", "vente": 100},{"ville": "Lyon", "vente": 80},{"ville": "Paris", "vente": 50}],'ville')
-regrouper_par_cle([{"ville": "Paris", "vente": 100},{"ville": "Lyon", "vente": 80},{"ville": "Paris", "vente": 50}, {"ville": "Lyon", "vente": 100}],'ville')
+#regrouper_par_cle([{"ville": "Paris", "vente": 100},{"ville": "Lyon", "vente": 80},{"ville": "Paris", "vente": 50}],'ville')
+#regrouper_par_cle([{"ville": "Paris", "vente": 100},{"ville": "Lyon", "vente": 80},{"ville": "Paris", "vente": 50}, {"ville": "Lyon", "vente": 100}],'ville')
+
+# Voir exo 7 dans exo7.py
