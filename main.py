@@ -27,4 +27,15 @@ def password():
         else:
             tentatives += 1
             print("Access denied")
-password()
+#password()
+
+def is_pangramme():
+    phrase = input("Phrase:")
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    for c in alphabet:
+        if c not in phrase.lower():
+            print("Pas un pangramme")
+            return False
+    print("C'est un pangramme")
+is_pangramme()
+
