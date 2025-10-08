@@ -23,7 +23,7 @@ def remove_student(liste_student):
         liste_student.remove(student)
         print("retiré")
 
-#def moyenne_gen(liste_student):
+def moyenne_gen(liste_student):
 
 def main():
     liste_student = []
