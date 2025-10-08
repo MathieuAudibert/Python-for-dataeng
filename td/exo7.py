@@ -20,9 +20,11 @@ def remove_student(liste_student):
     print(liste_student)
     student = input("le nom du student a supprimer: ")
     for i in liste_student:
-        if student == liste_student.get("nom"):
-            liste_student.remove(student)
+        if student == i.get("nom"):
+            liste_student.remove(i)
             print("retiré")
+            print(liste_student)
+
 
 #def moyenne_gen(liste_student):
 
