@@ -1,6 +1,7 @@
-def sort_phrase():
+def sort_distinct_words():
     phrase = input("Phrase: ")
     words = phrase.split()
-    words.sort()
-    print(words)
-sort_phrase()  
+    sorted_words = sorted(words, key=lambda w: (len(w), w))
+    print(sorted_words)
+sort_distinct_words()
+
