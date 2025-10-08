@@ -37,5 +37,8 @@ def is_pangramme():
             print("Pas un pangramme")
             return False
     print("C'est un pangramme")
-is_pangramme()
+#is_pangramme()
 
+is_palindrome = lambda word : word == word[::-1]
+print(is_palindrome("radar"))
+print(is_palindrome("python"))
