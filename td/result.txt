@@ -1,0 +1,9 @@
+liste student:
+mathieu: [12, 15, 14]
+roméo: [12, 19]
+
+moyenne:
+mathieu: 13
+roméo: 15
+
+best moy: roméo: 15

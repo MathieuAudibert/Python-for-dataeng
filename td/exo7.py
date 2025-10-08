@@ -35,22 +35,36 @@ def moyenne_gen(liste_student):
                 notes[notes.index(x)] = int(x)
         
         student_moy["nom"] = i.get("nom")
-        student_moy["moyenne"] = sum(notes) / len(i.get("notes"))
+        student_moy["moyenne"] = int(sum(notes) / len(i.get("notes")))
         class_moy.append(student_moy)
-    print(class_moy)
     return class_moy
-
+    
 def student_best_moy(liste_student):
     moyenne = moyenne_gen(liste_student)
-    
+    print(moyenne)
+
+    best_student = max(moyenne, key=lambda x: x["moyenne"])
+    print(f"{best_student['nom']}: {best_student['moyenne']}")
 
 def main():
     liste_student = []
 
     add_student(liste_student)
     remove_student(liste_student)
-    moyenne_gen(liste_student)
-    student_best_moy(liste_student)
+    moyennes = moyenne_gen(liste_student)
+    best_student = None
+    if moyennes:
+        best_student = max(moyennes, key=lambda x: x["moyenne"])
+
+    with open("result.txt", 'w') as f:
+        f.write("liste student:\n")
+        for student in liste_student:
+            f.write(f"{student['nom']}: {student['notes']}\n")
+        f.write("\nmoyenne:\n")
+        for m in moyennes:
+            f.write(f"{m['nom']}: {m['moyenne']}\n")
+        if best_student:
+            f.write(f"\nbest moy: {best_student['nom']}: {best_student['moyenne']}\n")
 
 if __name__ == "__main__":
     main()
