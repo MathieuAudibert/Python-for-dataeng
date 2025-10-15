@@ -8,3 +8,4 @@ class Bus(Vehicule):
     def nombre_de_place(self, capacite=50):
         return f"La capacité de {self.nom}, {capacite}"
 bus = Bus(120, 120000, "bus")
+print(bus.nombre_de_place())
