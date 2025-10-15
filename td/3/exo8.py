@@ -4,9 +4,6 @@ class Vehicule:
         self.kilometrage = kilometrage
 
 class Bus(Vehicule):
-    def __init__(self, vitesse_max, kilometrage):
-        super().__init__(vitesse_max, kilometrage)
-
     def __str__(self):
         return f"Vitesse max: {self.vitesse_max}, Kilometrage: {self.kilometrage}"
 
