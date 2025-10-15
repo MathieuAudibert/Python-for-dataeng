@@ -27,6 +27,6 @@ print(restau)
 
 print("---------------------------")
 
-restau.ajouter_plat("Caca", 2)
+restau.ajouter_plat("Mafé", 2)
 restau.reserver_tables(3)
 print(restau)
