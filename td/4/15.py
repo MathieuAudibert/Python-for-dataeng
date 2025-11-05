@@ -1,0 +1,78 @@
+import os
+
+# 1.
+
+def lister_logfiles(path="system_logs"):
+    if not (os.path.exists(path)):
+        os.makedirs(path)
+
+    logfiles = os.listdir(path)
+    for f in logfiles:
+        if f.endswith(".log"):
+            print(f)
+            return f
+
+#lister_logfiles()
+
+# 2. 
+
+if not (os.path.exists("logs_clean")):
+    os.makedirs("logs_clean")
+
+# 3.
+
+def read_line_by_line(path="system_logs"):
+    if not (os.path.exists(path)):
+        os.makedirs(path)
+
+    logfiles = os.listdir(path)
+    for f in logfiles:
+        if f.endswith(".log"):
+            with open(path + "/" + f, "r") as file:
+                for line in file:
+                    if line.strip() != "":
+                        print(line.strip())
+
+#read_line_by_line()
+
+# 4. 
+
+def count_total_lines(path="system_logs"):
+    if not (os.path.exists(path)):
+        os.makedirs(path)
+
+    logfiles = os.listdir(path)
+    list_cleaned_lines = []
+    for f in logfiles:
+        if f.endswith(".log"):
+            with open(path + "/" + f, "r") as file:
+                for line in file:
+                    if line.strip() != "":
+                        list_cleaned_lines.append(line.strip())
+    print(len(list_cleaned_lines))
+
+#count_total_lines()
+
+# 5. 
+
+def detect_errors(path="system_logs"):
+    if not (os.path.exists(path)):
+        os.makedirs(path)
+
+    logfiles = os.listdir(path)
+    for f in logfiles:
+        filepath = path + "/" + f
+
+        if f.endswith(".log"):
+            with open(filepath, "r") as file:
+                i = 0
+                for line in file:
+                    i+=1
+                    if line.strip() == "ERROR":
+                        with open('erreurs.txt', 'w') as error_file:
+                            error_file.write(str(i) + ", dans le fichier " + filepath)
+
+detect_errors()
+
+# 6. 
+

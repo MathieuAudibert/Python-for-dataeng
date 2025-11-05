@@ -25,12 +25,9 @@ with open('etudiant.pkl', 'rb') as f:
     print(data)
 
 # Exercice 4
-try:
-    name = input("Nom: ")
-    age = input("age: ")
-
+try:    
     with open('utilisateur.json', 'w') as f:
-        data = {'name': name, 'age': age}
+        data = {'name': input("Nom: "), 'age': input("age: ")}
         json.dump(data, f)
 
     with open('utilisateur.json', 'r') as f:
