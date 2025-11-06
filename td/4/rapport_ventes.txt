@@ -1,0 +1,8 @@
+rapport
+
+ca /fichier :
+ventes_lyon.csv : 349.18 €
+ventes_marseille.csv : 406.99 €
+ventes_paris.csv : 448.36 €
+
+produit : Chaise (7 unités)

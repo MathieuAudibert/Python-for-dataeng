@@ -1,0 +1,5 @@
+id_produit;nom;quantite;prix_unitaire;source
+6;Buffet;2;0;ventes_lyon.csv
+10;Vase;abc;25.00;ventes_marseille.csv
+4;;2;59.00;ventes_paris.csv
+5;Canapé;-1;499.00;ventes_paris.csv

@@ -1,0 +1,6 @@
+id_produit;nom;quantite;prix_unitaire
+1;Chaise;4;49.99
+2;Table;1;129.90
+3;Lampe;3;39.50
+4;;2;59.00
+5;Canapé;-1;499.00

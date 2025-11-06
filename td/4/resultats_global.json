@@ -1,0 +1,13 @@
+{
+  "ca": {
+    "ventes_lyon.csv": 349.18000000000006,
+    "ventes_marseille.csv": 406.99,
+    "ventes_paris.csv": 448.36
+  },
+  "produit": {
+    "nom": "Chaise",
+    "quantite": 7
+  },
+  "lignes OK": 9,
+  "lignes KO": 4
+}
