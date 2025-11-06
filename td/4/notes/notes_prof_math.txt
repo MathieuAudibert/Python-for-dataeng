@@ -1,0 +1,3 @@
+Dupont, Alice, Mathématiques, 15
+Martin, Bob, Mathématiques, 9
+Durand, Chloé, Mathématiques, 18

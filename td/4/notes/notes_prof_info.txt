@@ -1,0 +1,3 @@
+Dupont, Alice, Informatique, 17
+Martin, Bob, Informatique, 13
+Durand, Chloé, Informatique, 21
