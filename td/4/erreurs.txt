@@ -1,1 +1,4 @@
-1, dans le fichier system_logs/test2.log
+erreur ligne 3 dans system_logs/test.log
+erreur ligne 12 dans system_logs/test.log
+erreur ligne 4 dans system_logs/test2.log
+erreur ligne 7 dans system_logs/test2.log

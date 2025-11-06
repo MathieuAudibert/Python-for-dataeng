@@ -1,0 +1,2 @@
+test.log: lignes = 15, erreurs = 2
+test2.log: lignes = 7, erreurs = 2
